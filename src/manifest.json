@@ -1,0 +1,49 @@
+{
+  "name": "Project Upcycle",
+  "short_name": "Project Upcycle",
+  "description": "Project Upcycle",
+  "lang": "en-US",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#008640",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://projectupcycle.github.io/manifest.json"
+    }
+  ],
+  "theme_color": "#008640",
+  "icons": [
+    {
+      "src": "/static/icons/128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

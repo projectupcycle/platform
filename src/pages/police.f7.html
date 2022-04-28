@@ -1,0 +1,103 @@
+<div class="page" data-name="police">
+  <div class="toolbar tabbar toolbar-bottom">
+    <div class="toolbar-inner">
+      <a href="#pol-map" class="tab-link tab-link-active"
+        ><i class="icon material-icons md-only">map</i>
+        <span class="tabbar-label">Map</span></a
+      >
+      <a href="#pol-prof" class="tab-link"
+        ><i class="icon material-icons md-only"
+          ><span class="material-icons-outlined"> assignment_ind </span></i
+        >
+        <span class="tabbar-label">Account</span></a
+      >
+    </div>
+  </div>
+  <div class="tabs">
+    <div id="pol-map" class="page-content tab tab-active">
+      <div
+        id="map"
+        class="myMap"
+        style="
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+        "
+      ></div>
+      <div
+        id="nearPolD"
+        style="font-size: larger;"
+        class="hideMapEl fab fab-extended fab-left-top color-blue">
+        <a href="#">
+          <div id="nearPolDText" class="fab-text"></div>
+        </a>
+      </div>
+      <div
+        id="nearPolL"
+        style="font-size: larger;"
+        class="hideMapEl fab fab-extended fab-center-bottom color-green"
+        data-sheet=" .pol-sheet"
+      >
+        <a href="#">
+          <div id="nearPolT" class="fab-text">No Running OPS</div>
+        </a>
+      </div>
+      <div
+        id="nearPolB"
+        class="hideMapEl flash fab fab-right-bottom color-blue"
+      >
+        <a href=""><i class="icon material-icons md-only">near_me</i></a>
+      </div>
+      <div
+        id="nearPolF"
+        class="hideMapEl fab fab-left-bottom color-red"
+      >
+        <a id="stopFol"><i class="icon material-icons md-only">close</i></a>
+      </div>
+      <div class="sheet-modal pol-sheet">
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <div class="left">
+              <div class="title">Running OPS</div>
+            </div>
+            <div class="right">
+              <a class="link sheet-close" href="#">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="page-content">
+            <div class="list no-margin-top media-list">
+              <ul id="runOPSCont" class="runOPSCont"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pol-prof" class="page-content tab">
+      <div class="view usrProf">
+        <div>
+          <img
+            style="height: 200px; width: 200px; border-radius: 50%;"
+            src="../static/icons/police.jpg"
+          />
+        </div>
+        <h1 id="userNameP" style="font-size: 2.2rem;">Example Police</h1>
+        <h1 class="no-margin-top" id="userBranchP" style="font-size: 1.8rem;">
+          Example Branch
+        </h1>
+        <p class="no-margin-top" id="userEmailP" style="font-size: 1.5rem;">
+          pol@ambtrack.com
+        </p>
+        <button
+          style="width: 70%; font-size: x-large;"
+          onclick="signUsrOut()"
+          class="button button-large color-red button-raised button-round button-fill"
+        >
+          Sign Out
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
