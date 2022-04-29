@@ -1,0 +1,130 @@
+<div class="page" data-name="user-login">
+  <div data-swiper='{"allowTouchMove": false}' class="swiper-container swiper-login swiper-init demo-swiper page-content">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide container">
+        <span class="text-3xl mx-2 text-align-center">Continue with authentication to access the <span
+            class="text-green-600">Upcycle</span> Network 📶</span>
+        <img style="max-width: 100%;max-height: 400px;
+        height: auto;" src="../static/images/uintro.png" alt="">
+        <div class="text-align-center" style="text-align: center;">
+          <button class="text-align-center button-round button bgetstarted button-large button-raised button-fill"
+            style="display: inline; width: auto; font-size: x-large;" onclick="getNext(1)">
+            Sign in
+          </button>
+        </div>
+        <span class="text-2xl my-2">OR</span>
+        <div class="text-align-center" style="text-align: center;">
+          <button class="text-align-center button-round button bgetstarted button-large button-raised button-fill"
+            style="display: inline; width: auto; font-size: x-large;" onclick="getNext(3)">
+            Register
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide container">
+        <span class="text-5xl mx-2 text-align-center">Welcome back to <span class="text-green-600">Upcycle</span> sign in to continue</span>
+        <br>
+        <img class="no-margin-bottom" style="max-width: 100%;max-height: 200px;
+        height: auto; " src="../static/images/upword.png" alt="">
+        <form class="list no-hairlines-md no-margin-bottom" id="login-form">
+          <ul>
+            <li>
+              <div class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">E-mail</div>
+                  <div class="item-input-wrap">
+                    <input id="emID" type="email" required validate name="email" placeholder="Enter your E-mail ID" />
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">
+                    Enter your password
+                  </div>
+                  <div class="item-input-wrap">
+                    <input type="password" required validate name="password" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <input type="reset" style="display: none;" id="resetloginform" />
+          </ul>
+        </form>
+        <div class="text-align-center margin-top margin-bottom" style="text-align: center;">
+          <button onclick="signIn('users')" class="text-2xl button-round text-align-center button button-medium button-raised button-fill"
+            style="display: inline; width: 200px;">
+            <span>Sign In</span>
+          </button>
+        </div>
+        <div class="text-align-center" style="text-align: center;">
+          <button onclick="swiper.slidePrev()" class="text-align-center button button-small"
+            style="display: inline; width: 50px;">
+            <i class="material-icons color-blue md-only">arrow_back</i>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide container">
+        <span class="text-3xl mx-2 text-align-center">Register to get access to the <span
+            class="text-green-600">Upcycle</span> Network</span>
+        <img class="no-margin" style="max-width: 100%;max-height: 200px;
+            height: auto;" src="../static/images/regup.png" alt="">
+        <form class="list no-hairlines-md no-margin-bottom" id="register-form">
+          <ul>
+            <li>
+              <div class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">Name</div>
+                  <div class="item-input-wrap">
+                    <input id="uName" type="text" required name="name" placeholder="Enter your name" />
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">E-mail</div>
+                  <div class="item-input-wrap">
+                    <input id="uID" type="email" required validate name="email" placeholder="Enter your E-mail ID" />
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-floating-label">
+                    Password
+                  </div>
+                  <div class="item-input-wrap">
+                    <input id="uPWD" type="password" required validate name="password" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <input type="reset" style="display: none;" id="resetregform" />
+          </ul>
+        </form>
+        <div class="text-align-center margin-top margin-bottom" style="text-align: center;">
+          <button onclick="registerU()"
+            class="text-2xl text-align-center button-round button button-medium button-raised button-fill"
+            style="display: inline; width: 200px;">
+            <span>Register</span>
+          </button>
+        </div>
+        <div class="text-align-center margin-bottom" style="text-align: center;">
+          <button onclick="swiper.slideTo(0)" class="text-align-center button button-small"
+            style="display: inline; width: 50px;">
+            <i class="material-icons color-blue md-only">arrow_back</i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

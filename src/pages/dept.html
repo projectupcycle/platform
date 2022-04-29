@@ -1,0 +1,102 @@
+<div class="page" data-name="dept">
+  <div class="toolbar tabbar toolbar-bottom">
+    <div class="toolbar-inner">
+      <a href="#user-map" class="tab-link tab-link-active"><i class="icon material-icons md-only">map</i>
+        <span class="tabbar-label">Map</span></a>
+      <a href="#user-prof" class="tab-link"><i class="icon material-icons md-only"><span class="material-icons-outlined">
+            assignment_ind </span></i>
+        <span class="tabbar-label">Account</span></a>
+    </div>
+  </div>
+  <div class="tabs">
+    <div id="user-map" class="page-content tab tab-active">
+      <div id="map" class="myMap" style="
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+        "></div>
+      <div id="startTripB" style="font-size: larger;"
+        class="hideMapEl color-red sheet-open fab fab-extended fab-center-bottom color-red" data-sheet=" .amb-sheet">
+        <a href="#">
+          <div id="startTripT" class="fab-text">Start</div>
+        </a>
+      </div>
+      <div id="startTripN" class="hideMapEl flash fab fab-right-bottom color-blue">
+        <a href=""><i class="icon material-icons md-only">navigation</i></a>
+      </div>
+      <div class="sheet-modal amb-sheet">
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <div class="left">
+              <div class="title padding-left">Start Duty</div>
+            </div>
+            <div class="right">
+              <a class="link sheet-close" href="#">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+
+          <form class="list no-hairlines-md no-margin-top no-margin-bottom" id="start-trip-form">
+            <ul>
+              <li>
+                <div class="item-content item-input item-input-outline">
+                  <div class="item-inner">
+                    <div class="item-title item-floating-label">
+                      Set Destination
+                    </div>
+                    <div class="item-input-wrap geocoder" id="geocoder"><span
+                        onclick="document.getElementById('resetstartform').click();" style=" z-index: 3;"
+                        class="input-clear-button"></span></div>
+                  </div>
+                </div>
+              </li>
+              <li style="z-index: 0;">
+                <div class="item-content item-input item-input-outline">
+                  <div class="item-inner">
+                    <div class="item-title item-floating-label">
+                      Set Priority
+                    </div>
+                    <div class="item-input-wrap input-dropdown-wrap">
+                      <select name="priority">
+                        <option value="1">Normal</option>
+                        <option value="2">Moderate</option>
+                        <option value="3">Critical</option>
+                        <option value="4">Green corridor</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <input type="reset" style="display: none;" id="resetstartform" />
+            </ul>
+          </form>
+          <div class="text-align-center margin-top" style="text-align: center;">
+            <button onclick="sendDataAmb()" class="text-align-center button button-large button-raised button-fill"
+              style="display: inline; width: 200px;">
+              <span>Start Duty</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="user-prof" class="page-content tab">
+      <div class="view usrProf">
+        <div>
+          <img style="height: 200px; width: 200px; border-radius: 50%;" src="../static/images/recenter.png" />
+        </div>
+        <h1 id="userNameA" style="font-size: 2.2rem;"></h1>
+
+        <p class="no-margin-top" id="userEmailA" style="font-size: 1.2rem;">
+        
+        </p>
+        <br>
+        <button style="width: 70%; font-size: x-large;" onclick="signUsrOut()"
+          class="button button-large color-red button-raised button-round button-fill">
+          Sign Out
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

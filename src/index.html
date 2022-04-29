@@ -18,23 +18,30 @@
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/icons.css" />
     <link href="./css/mapbox-gl.css" rel="stylesheet" />
-    <!--script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
                 navigator.serviceWorker.register("/sw.js");
             });
         }
-    </script-->
+    </script>
 </head>
 
-<body>
+<body class="select-none">
     <div id="app">
         <div class="views safe-areas" id="app-view">
             <div class="view view-main view-init"></div>
         </div>
-        <a class="display-none" data-transition="f7-circle" href="/login/" data-view=".view-main" id="log">a</a>
-        <a class="display-none" data-transition="f7-circle" href="/pwainstall/" data-view=".view-main"
-            id="pwainstall">c</a>
+        <a class="display-none" data-transition="f7-circle" href="/intro/" data-view=".view-main" id="intro"></a>
+        <a class="display-none" data-transition="f7-circle" href="/login/" data-view=".view-main" id="login"></a>
+        <a class="display-none" data-transition="f7-circle" href="/user/" data-view=".view-main" id="user"></a>
+        <a class="display-none" data-transition="f7-circle" href="/dept/" data-view=".view-main" id="dept"></a>
+        <a class="display-none" data-transition="f7-circle" href="/user-login/" data-view=".view-main"
+            id="user-login"></a>
+        <a class="display-none" data-transition="f7-circle" href="/dept-login/" data-view=".view-main"
+            id="dept-login"></a>
+
     </div>
     <script defer src="./js/modules/framework7.bundle.min.js"></script>
     <script defer src="./js/routes.js"></script>
